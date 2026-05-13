@@ -21,7 +21,7 @@ CDAZZDEV-MLE-AasirWaseer/
 
 ## Task 1 — Financial AI: LLM-Powered Equity Research Assistant
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AasirWaseer/CDAZZDEV-MLE-AasirWaseer/blob/main/task1_financial/task1_financial_ai.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/AasirWaseer/CDAZZDEV-MLE-AasirWaseer/blob/main/task1_financial/task1_financial_ai.ipynb](https://colab.research.google.com/drive/1rkw6iT32Ernk17DFYmkrBFsA06xw18WI?usp=sharing))
 
 ### What it does
 
