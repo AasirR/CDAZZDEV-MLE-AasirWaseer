@@ -1,6 +1,6 @@
 # CITATIONS.md
 
-All AI tool usage and adapted open-source code is documented below per the CDAZZDEV citation policy.
+All AI tool usage and adapted open-source code is documented below per the CDAZZDEV citation policy (Section 2.2).
 
 ---
 
@@ -47,3 +47,35 @@ All AI tool usage and adapted open-source code is documented below per the CDAZZ
 ---
 
 *All architectural decisions, prompt engineering, and integration logic were designed by the candidate.*
+
+---
+
+## Task 2 — Generative AI Fine-Tuning
+
+### AI-Assisted Code
+
+```python
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Identify all pip packages needed for QLoRA fine-tuning with PEFT, TRL, BitsAndBytes on Colab', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Write a robust dataset generator with retry logic, JSON validation, and progress tracking for Groq API', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Compute dataset diversity metrics: prompt length distribution, clause type balance, keyword frequency', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Format legal extraction examples as chat JSONL for Phi-2 with system/user/assistant turns, stratified split', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Document QLoRA hyperparameter choices for legal NLP fine-tuning on Colab T4', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Configure LoRA for Phi-2 with PEFT, show trainable parameter count', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Configure SFTTrainer with per-epoch val loss logging and manual loss tracking callback', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Merge LoRA adapters with merge_and_unload, save merged model, push to Hugging Face Hub', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Run ROUGE-L and BERTScore evaluation on base vs fine-tuned model outputs, return comparison table', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Build hallucination reviewer that checks fine-tuned outputs against ground truth', Date: 2026-05-13
+# AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Build ChromaDB RAG fallback that triggers on low confidence, retrieves domain context, re-queries model', Date: 2026-05-13
+```
+
+### Open-Source References (Task 2)
+
+- Dettmers, T. et al. (2023). *QLoRA: Efficient Finetuning of Quantized LLMs*. arXiv:2305.14314
+- Hu, E. et al. (2021). *LoRA: Low-Rank Adaptation of Large Language Models*. arXiv:2106.09685
+- TRL SFTTrainer documentation: https://huggingface.co/docs/trl/sft_trainer
+- PEFT documentation: https://huggingface.co/docs/peft
+- BERTScore: https://github.com/Tiiiger/bert_score — used as pip library only
+
+---
+
+*All architectural decisions and hyperparameter justifications were made by the candidate.*
