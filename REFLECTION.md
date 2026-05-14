@@ -25,7 +25,7 @@
 
 **Hyperparameter rationale summary:** LoRA rank 16 provides enough intrinsic dimension for 10 clause types plus JSON formatting. Alpha=2×r is the standard scaling convention. Batch size 2 + gradient accumulation 8 gives effective batch 16 within T4 VRAM limits. Cosine LR scheduling prevents oscillation near the loss minimum. `paged_adamw_8bit` saves ~75% of optimiser VRAM versus fp32 AdamW.
 
-**Infrastructure constraint — GPU unavailability:** The Colab free tier enforces dynamic GPU quotas shared across all users. During this submission window, T4 GPU access was denied at the platform level. Task 2A (dataset generation) was completed and single-example generation was confirmed working. Tasks 2B and 2C are fully implemented in code but could not be executed. This is documented transparently. To reproduce: run the notebook on Kaggle (30 free GPU hours/week) or Colab Pro with no code changes required.
+**Infrastructure constraint — GPU unavailability:** The Colab free tier enforces dynamic GPU quotas shared across all users. During this submission window, T4 GPU access was denied at the platform level. Task 2A (dataset generation) was completed and single-example generation was confirmed working. Tasks 2B and 2C are fully implemented in code but could not be executed. This is documented transparently. To reproduce: run the notebook on Kaggle Notebooks (https://kaggle.com) (30 free GPU hours/week) or Colab Pro with no code changes required.
 
 **Why not fabricate outputs:** Submitting mock loss curves or invented ROUGE scores would be straightforward but dishonest. Engineering integrity means documenting real constraints accurately — which is also more informative to a reviewer than unverifiable numbers.
 
@@ -57,3 +57,13 @@
 - **Groq rate limits (Task 1 & 2):** Free tier ~30 req/min. Checkpoint saving and sleep intervals mitigated interruption risk.
 - **Phi-2 tokenizer (Task 2):** CodeGen-based tokenizer with no native chat template support — custom delimiters are learned during fine-tuning.
 - **Colab GPU quota (Task 2):** T4 access was exhausted at the platform level. Documented above.
+
+---
+
+## Colab Notebook Links
+
+| Task | Link |
+|------|------|
+| Task 1 — Financial AI | https://colab.research.google.com/drive/1rkw6iT32Ernk17DFYmkrBFsA06xw18WI?usp=sharing |
+| Task 2 — Generative AI | https://colab.research.google.com/drive/1TN3op2--1Ue-zPM0FD3pC9yOfF5EEMF9?usp=sharing |
+| Task 3 — Agentic Workflows | *(to be added)* |

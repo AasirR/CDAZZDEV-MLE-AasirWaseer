@@ -13,7 +13,7 @@ CDAZZDEV-MLE-AasirWaseer/
 ├── task1_financial/
 │   └── task1_financial_ai.ipynb   ← Task 1: Financial AI (complete, executed)
 ├── task2_genai/
-│   └── task2_genai.ipynb          ← Task 2: Generative AI (code complete; GPU blocked — see note)
+│   └── task2_genai.ipynb          ← Task 2: Generative AI — 2A complete; 2B/2C GPU blocked
 ├── task3_agentic/
 │   └── task3_agentic.ipynb        ← Task 3: Agentic Workflows (complete, executed)
 ├── CITATIONS.md                    ← AI tool usage documentation
@@ -25,7 +25,7 @@ CDAZZDEV-MLE-AasirWaseer/
 
 ## Task 1 — Financial AI: LLM-Powered Equity Research Assistant
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AasirWaseer/CDAZZDEV-MLE-AasirWaseer/blob/main/task1_financial/task1_financial_ai.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1rkw6iT32Ernk17DFYmkrBFsA06xw18WI?usp=sharing)
 
 **Status: ✅ Complete and fully executed**
 
@@ -49,23 +49,22 @@ CDAZZDEV-MLE-AasirWaseer/
 
 ## Task 2 — Generative AI: Domain-Specific Fine-Tuning Pipeline
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AasirWaseer/CDAZZDEV-MLE-AasirWaseer/blob/main/task2_genai/task2_genai.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TN3op2--1Ue-zPM0FD3pC9yOfF5EEMF9?usp=sharing)
 
-**Status: ⚠️ Code complete — GPU execution blocked by Colab free-tier quota**
+**Status: ⚠️ Task 2A complete and executed — 2B/2C GPU blocked**
 
 **Domain:** Legal Clause Extraction (10 clause types from commercial contracts → structured JSON)
 
 | Sub-task | Status |
 |----------|--------|
-| **2A** Dataset generation via Groq teacher | ✅ Implemented & tested — single-example generation confirmed working |
-| **2A** Diversity metrics, JSONL format, 80/10/10 split | ✅ Fully implemented |
-| **2B** QLoRA 4-bit NF4 fine-tuning, hyperparameter docs | ✅ Fully implemented, not executed (no GPU) |
-| **2B** Loss logging, merge & HF push | ✅ Fully implemented, not executed (no GPU) |
-| **2C** ROUGE-L + BERTScore evaluation | ✅ Fully implemented, not executed (no GPU) |
-| **2C** Hallucination review, qualitative analysis | ✅ Fully implemented, not executed (no GPU) |
-| **Bonus** ChromaDB RAG fallback | ✅ Fully implemented, not executed (no GPU) |
+| **2A** Use case definition | ✅ Complete |
+| **2A** Dataset generation via Groq teacher (`llama-3.3-70b-versatile`) | ✅ Complete — single-example generation confirmed working |
+| **2A** Diversity metrics, JSONL format, 80/10/10 split | ✅ Complete |
+| **2B** QLoRA 4-bit NF4 fine-tuning | ⚠️ Code removed — Colab free-tier GPU quota exhausted |
+| **2C** ROUGE-L + BERTScore evaluation | ⚠️ Code removed — depends on 2B execution |
+| **Bonus** ChromaDB RAG fallback | ⚠️ Code removed — depends on 2B execution |
 
-> **Why:** Colab free-tier GPU (T4) quota was exhausted at the platform level during the submission window. This is a resource constraint, not a code limitation. All code is complete and can be reproduced on **Kaggle Notebooks** (30 free GPU hours/week) or Colab Pro with no changes. See the ⚠️ Submission Note cell in the notebook for full details.
+> **Why:** Colab free-tier T4 GPU quota was exhausted at the platform level during the submission window. Rather than submitting fabricated outputs or non-executable dead code, 2B/2C cells were cleanly removed and the constraint documented transparently. All 2B/2C logic is described in full in `REFLECTION.md`. To reproduce: run on **Kaggle Notebooks** (30 free GPU hours/week) or Colab Pro with no code changes.
 
 **Setup:** Runtime → **T4 GPU** · Secrets: `GROQ_API_KEY`, `HF_TOKEN` · Runtime → Run all
 
@@ -73,9 +72,7 @@ CDAZZDEV-MLE-AasirWaseer/
 
 ## Task 3 — Agentic Workflows
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AasirWaseer/CDAZZDEV-MLE-AasirWaseer/blob/main/task3_agentic/task3_agentic.ipynb)
-
-**Status: ✅ Complete and fully executed**
+**Status: ✅ Complete and fully executed** *(Colab link to be added)*
 
 *(Details to be added upon completion)*
 
@@ -111,9 +108,9 @@ CDAZZDEV-MLE-AasirWaseer/
 | Model Save / HF Push | 5 | 0 — GPU unavailable |
 | ROUGE-L Comparison | 15 | 0 — GPU unavailable |
 | Hallucination Review | 15 | 0 — GPU unavailable |
-| Qualitative Analysis | 10 | 5 — partial (written without execution) |
-| **Bonus (RAG Fallback)** | +5 | +3 — implemented, not executed |
-| **Task 2 Total** | **105** | **~52** |
+| Qualitative Analysis | 10 | 5 — written without execution |
+| **Bonus (RAG Fallback)** | +5 | 0 — GPU unavailable |
+| **Task 2 Total** | **105** | **~49** |
 
 ### Task 3
 

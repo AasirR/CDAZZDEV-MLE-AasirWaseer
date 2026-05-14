@@ -63,4 +63,15 @@ Task 2A (dataset generation pipeline) was fully implemented and single-example g
 
 ---
 
+---
+
+## Colab Notebook Links
+
+| Task | Link |
+|------|------|
+| Task 1 — Financial AI | https://colab.research.google.com/drive/1rkw6iT32Ernk17DFYmkrBFsA06xw18WI?usp=sharing |
+| Task 2 — Generative AI | https://colab.research.google.com/drive/1TN3op2--1Ue-zPM0FD3pC9yOfF5EEMF9?usp=sharing |
+| Task 3 — Agentic Workflows | *(to be added)* |
+
+
 *All architectural decisions and hyperparameter justifications were made by the candidate. AI assistance was used for code generation and syntax; all decisions can be defended in interview.*
