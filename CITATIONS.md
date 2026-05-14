@@ -8,53 +8,32 @@ All AI tool usage and adapted open-source code is documented below per the CDAZZ
 
 ### AI-Assisted Code
 
-```python
+```
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Identify required pip packages for yfinance, groq, pydantic pipeline', Date: 2026-05-13
-# File: task1_financial_ai.ipynb, Cell: Environment Setup
-```
-
-```python
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Implement RSI with Wilder smoothing and MACD from first principles in pandas', Date: 2026-05-13
-# File: task1_financial_ai.ipynb, Cell: Technical Indicators
-```
-
-```python
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Design Pydantic v2 models for headline sentiment and trading signal with validators', Date: 2026-05-13
-# File: task1_financial_ai.ipynb, Cell: Pydantic Schemas
-```
-
-```python
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Write system/user prompts for financial news sentiment and trading signal generation', Date: 2026-05-13
-# File: task1_financial_ai.ipynb, Cell: Prompt Templates
-```
-
-```python
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Implement Groq API wrapper with retry, JSON parsing, and Pydantic validation', Date: 2026-05-13
-# File: task1_financial_ai.ipynb, Cell: LLM Client + Sentiment Analysis
-```
-
-```python
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Generate styled HTML equity research brief template with embedded matplotlib base64 chart', Date: 2026-05-13
-# File: task1_financial_ai.ipynb, Cell: Bonus HTML Report
 ```
 
-### Open-Source References
+### Open-Source References (Task 1)
 
-- yfinance documentation: https://github.com/ranaroussi/yfinance — used for API method signatures (no code copied)
-- Pydantic v2 documentation: https://docs.pydantic.dev/latest/ — used for field_validator syntax reference
-- Wilder RSI specification: Wilder, J.W. (1978). *New Concepts in Technical Trading Systems* — indicator formula reference only
-
----
-
-*All architectural decisions, prompt engineering, and integration logic were designed by the candidate.*
+- yfinance documentation: https://github.com/ranaroussi/yfinance — API method signatures (no code copied)
+- Pydantic v2 documentation: https://docs.pydantic.dev/latest/ — field_validator syntax reference
+- Wilder, J.W. (1978). *New Concepts in Technical Trading Systems* — RSI formula specification
 
 ---
 
 ## Task 2 — Generative AI Fine-Tuning
 
+### Execution Status
+
+Task 2A (dataset generation pipeline) was fully implemented and single-example generation was confirmed working via Groq `llama-3.3-70b-versatile`. Tasks 2B and 2C could not be executed due to Colab free-tier GPU quota exhaustion during the submission window. All code is implemented and documented — see the Submission Note in `task2_genai/task2_genai.ipynb` for full details.
+
 ### AI-Assisted Code
 
-```python
+```
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Identify all pip packages needed for QLoRA fine-tuning with PEFT, TRL, BitsAndBytes on Colab', Date: 2026-05-13
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Write a robust dataset generator with retry logic, JSON validation, and progress tracking for Groq API', Date: 2026-05-13
 # AI-ASSISTED: Claude (claude-sonnet-4-20250514), Prompt: 'Compute dataset diversity metrics: prompt length distribution, clause type balance, keyword frequency', Date: 2026-05-13
@@ -78,4 +57,10 @@ All AI tool usage and adapted open-source code is documented below per the CDAZZ
 
 ---
 
-*All architectural decisions and hyperparameter justifications were made by the candidate.*
+## Task 3 — Agentic Workflows
+
+*(To be added upon Task 3 completion)*
+
+---
+
+*All architectural decisions and hyperparameter justifications were made by the candidate. AI assistance was used for code generation and syntax; all decisions can be defended in interview.*
