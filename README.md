@@ -72,7 +72,7 @@ CDAZZDEV-MLE-AasirWaseer/
 
 ## Task 3 — Agentic Workflows: Multi-Agent Financial Research System
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](<ADD_COLAB_LINK_HERE>)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([<ADD_COLAB_LINK_HERE>](https://colab.research.google.com/drive/1OSEJWTvz-EewCQGvs1BpgqDdknQKn-XO?usp=sharing))
 
 **Status: ✅ Complete and fully executed**
 
